@@ -1,0 +1,15 @@
+{
+    "name" : "Old stats screen +",
+    "description" : "Restores an old hud stats screen.",
+    "author" : "James",
+    "contact" : "https://steamcommunity.com/profiles/76561198075866112",
+    "version" : "1.0",
+    "blt_version" : 2,
+    "updates": [{"identifier": "oldhudstatsscreenplus"}],
+	"hooks" : [
+		{"hook_id" : "lib/managers/hud/newhudstatsscreen",		"script_path" : "oldstatsscreen.lua"},
+		{"hook_id" : "lib/managers/localizationmanager",		"script_path" : "oldstatsscreen.lua"},
+		{"hook_id" : "lib/managers/achievmentmanager",			"script_path" : "oldstatsscreen.lua"},
+		{"hook_id" : "lib/managers/menu/achievementlistgui",	"script_path" : "oldstatsscreen.lua"}
+	]
+}
